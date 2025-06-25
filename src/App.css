@@ -40,3 +40,61 @@
 .read-the-docs {
   color: #888;
 }
+
+html, body {
+  background: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  text-align: center;
+  padding: 4rem 1rem;
+  flex: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00ffff;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #00dddd;
+  transform: scale(1.05);
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
+}

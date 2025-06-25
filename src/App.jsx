@@ -19,10 +19,11 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <h1>Lore Ideas</h1>
       <button onClick={generateIdea}>Give me a lore idea</button>
-      <p>{idea}</p> {/* 🔥 4. Show idea here */}
+      <p>{idea}</p>
+      <footer>Lore Ideas by Tanya Santhosh</footer>
     </div>
   );
 }
