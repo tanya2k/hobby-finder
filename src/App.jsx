@@ -25,7 +25,7 @@ function App() {
       <button onClick={generateIdea}>Give me a lore idea</button>
       <p>{idea}</p>
     </div>
-    <footer>LoreIdeas by Tanya Santhosh</footer>
+    <footer>Lore Ideas by Tanya Santhosh</footer>
   </>
 );
 
