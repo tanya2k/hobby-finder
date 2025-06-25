@@ -1,12 +1,13 @@
 {
+  "homepage": "https://tanya2k.github.io/lore-ideas",
   "name": "lore-ideas-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://tanya2k.github.io/lore-ideas",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
