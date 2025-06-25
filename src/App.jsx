@@ -15,7 +15,7 @@ function App() {
   <>
     <div className="app">
       <h1>Lore Ideas</h1>
-      <button onClick={generateIdea}>Give me a lore idea</button>
+      <button onClick={generateIdea}>Generate</button>
       <p>{idea}</p>
     </div>
     <footer>Lore Ideas by Tanya Santhosh</footer>
