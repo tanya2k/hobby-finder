@@ -1,17 +1,10 @@
 import { useState } from 'react';
 import './App.css';
+import prompts from './prompts.json';
 
 function App() {
   const [idea, setIdea] = useState(""); 
-
-  const prompts = [ 
-    "Dance in public for 10 seconds",
-    "Text someone you haven't spoken to in 6 months",
-    "Speak in an accent all day",
-    "Try a food you've never had",
-    "Do something chaotic today"
-  ];
-
+ 
   function generateIdea() {
     const randomIndex = Math.floor(Math.random() * prompts.length);
     const randomPrompt = prompts[randomIndex];
