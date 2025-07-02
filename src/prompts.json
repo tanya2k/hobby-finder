@@ -1,18 +1,182 @@
 [
-  "Dance in public for 10 seconds",
-  "Text someone you haven’t spoken to in 6 months",
-  "Speak in an accent all day",
-  "Try a food you’ve never had",
-  "Do something chaotic today",
-  "Wear your shirt backwards for 10 minutes",
-  "Ask your friend ‘guess what?’ and never follow up",
-  "Try walking a different route than usual",
-  "Ask someone for a completely random recommendation",
-  "Take a voice note describing your current setting like it’s the start of a movie",
-  "Eat something with the wrong utensil",
-  "Try introducing yourself to someone with a fake middle name",
-  "Sit in a different spot than usual and observe for 5 minutes",
-  "Rename a groupchat and act like it’s always been that name",
-  "Write a single sentence that sums up your day like it’s lore"
+  {
+    "text": "Pick a random object near you. Pretend it’s the main character of a Netflix show. What’s the plot?",
+    "category": "silly",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Put on music. Dance for 1 minute like you’re trying to confuse a security camera.",
+    "category": "silly",
+    "chaos": 3,
+    "energy": "medium"
+  },
+  {
+    "text": "Walk around your room and give a fake tour in a British accent.",
+    "category": "silly",
+    "chaos": 3,
+    "energy": "medium"
+  },
+  {
+    "text": "Text someone ‘The frog has escaped. You know what to do.’ Say nothing else.",
+    "category": "silly",
+    "chaos": 4,
+    "energy": "low"
+  },
+  {
+    "text": "Wear your socks on your hands and narrate your next task like a puppet show.",
+    "category": "silly",
+    "chaos": 5,
+    "energy": "medium"
+  },
+  {
+    "text": "Sit outside and write down 5 things happening in the world around you. Pretend you're describing it to an alien.",
+    "category": "reflective",
+    "chaos": 1,
+    "energy": "low"
+  },
+  {
+    "text": "Write a haiku about your current mood. Doesn’t have to be deep, just honest.",
+    "category": "reflective",
+    "chaos": 1,
+    "energy": "low"
+  },
+  {
+    "text": "Lie down and imagine you're 80 years old. What tiny thing from today do you think you’d remember?",
+    "category": "reflective",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "What’s a song lyric or phrase that keeps coming back to you lately? Why do you think it sticks?",
+    "category": "reflective",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Write a short list: 3 people, 3 memories, 3 songs. No explanation. Just the first that come to mind.",
+    "category": "reflective",
+    "chaos": 1,
+    "energy": "low"
+  },
+  {
+    "text": "Take a photo of something mundane and make it look dramatic. Frame it like art.",
+    "category": "creative",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Record a voice note like you’re the narrator of a true crime documentary about your own day.",
+    "category": "creative",
+    "chaos": 2,
+    "energy": "medium"
+  },
+  {
+    "text": "Invent a new emotion. Describe what it feels like, when it shows up, and what it looks like.",
+    "category": "creative",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Design a product nobody needs but everyone would want. Bonus: name it.",
+    "category": "creative",
+    "chaos": 3,
+    "energy": "low"
+  },
+  {
+    "text": "Draw your current mental state as a weather map. Include a forecast.",
+    "category": "creative",
+    "chaos": 3,
+    "energy": "low"
+  },
+  {
+    "text": "Send a random nice message to someone you haven’t spoken to in months. No context. Just kindness.",
+    "category": "social",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Ask a friend: what’s something weird they loved as a kid? Compare answers.",
+    "category": "social",
+    "chaos": 2,
+    "energy": "medium"
+  },
+  {
+    "text": "Make a fake gift for someone using only objects in your room. Text them a photo of it.",
+    "category": "social",
+    "chaos": 3,
+    "energy": "medium"
+  },
+  {
+    "text": "Send a friend a 5-second voice note describing your mood using only sound effects.",
+    "category": "social",
+    "chaos": 3,
+    "energy": "medium"
+  },
+  {
+    "text": "Scroll through your camera roll, find a random photo, and text the person in it a compliment or memory.",
+    "category": "social",
+    "chaos": 1,
+    "energy": "low"
+  },
+  {
+    "text": "Walk in a random direction for 5 minutes. Take a photo of the most interesting thing you see.",
+    "category": "random",
+    "chaos": 3,
+    "energy": "medium"
+  },
+  {
+    "text": "Google a country you've never thought about. Find one fun fact. That’s your vibe of the day.",
+    "category": "random",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Set a 3-minute timer. Write down as many fake startup ideas as you can.",
+    "category": "random",
+    "chaos": 4,
+    "energy": "medium"
+  },
+  {
+    "text": "Pick one object you own. Imagine it’s secretly alive. What’s its backstory?",
+    "category": "random",
+    "chaos": 3,
+    "energy": "low"
+  },
+  {
+    "text": "Assign RPG stats to yourself today (Strength, Charisma, etc). Be brutally honest.",
+    "category": "random",
+    "chaos": 3,
+    "energy": "low"
+  },
+  {
+    "text": "Blind sketch challenge: Pick one object nearby and draw it without looking. No peeking. Picasso would be proud.",
+    "category": "creative",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Eat one snack with your non-dominant hand. Pretend your dominant hand retired.",
+    "category": "silly",
+    "chaos": 2,
+    "energy": "low"
+  },
+  {
+    "text": "Send someone a completely undeserved, dramatic compliment. Make them blush or cringe. No in-between.",
+    "category": "social",
+    "chaos": 3,
+    "energy": "low"
+  },
+  {
+    "text": "Put on a song. Dance like you're trying to impress a squirrel.",
+    "category": "silly",
+    "chaos": 3,
+    "energy": "medium"
+  },
+  {
+    "text": "Write a fake Yelp review for your bed.",
+    "category": "creative",
+    "chaos": 3,
+    "energy": "low"
+  }
 ]
-
