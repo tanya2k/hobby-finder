@@ -12,23 +12,26 @@ function App() {
   }
 
   return (
-  <>
-    <div className="app">
-      <h1>Lore Ideas</h1>
-      <button onClick={generateIdea}>Generate</button>
-      {idea && (
-        <div className="idea-card">
-          <h2>{idea.text}</h2>
-          <p>Category: {idea.category}</p>
-          <p>Energy: {idea.energy}</p>
-          <p>Chaos: {idea.chaos}</p>
-        </div>
-      )}
-    </div>
-    <footer>Lore Ideas by Tanya Santhosh</footer>
-  </>
-);
+    <>
+      <div className="app">
+        <h1>Lore Ideas</h1>
+        <button onClick={generateIdea}>Generate</button>
 
+        {idea && (
+          <div className="idea-card">
+            <h2>{idea.text}</h2>
+            <div className="tags">
+              <span className="tag">{idea.category}</span>
+              <span className="tag">{idea.energy} energy</span>
+              <span className="tag">chaos: {idea.chaos}</span>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <footer>Lore Ideas by Tanya Santhosh</footer>
+    </>
+  );
 }
 
 export default App;

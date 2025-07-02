@@ -73,9 +73,9 @@ html, body {
   padding: 1.5rem;
   margin-top: 1.5rem;
   border-radius: 1rem;
-  width: 500px; /* fixed width */
-  height: 220px; /* fixed height */
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1); /* subtle neon glow */
+  width: 500px;
+  height: 220px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -95,7 +95,6 @@ html, body {
   color: #bbbbbb;
   font-size: 0.95rem;
 }
-
 
 h1 {
   font-size: 2.5rem;
@@ -133,3 +132,28 @@ footer {
   font-size: 14px;
 }
 
+/* 🌟 NEW TAG STYLES */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: rgba(0, 255, 255, 0.2);
+  transform: scale(1.05);
+}
