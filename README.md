@@ -23,7 +23,7 @@ Whether you're stuck in a rut, bored on a Tuesday, or just want to feel like the
 
 ## 🖼️ Preview
 
-![image](https://github.com/user-attachments/assets/ff4bbe90-add5-4d2f-b3f4-b3b452171051)
+![image](https://github.com/user-attachments/assets/698e91b0-5c5b-4b76-9214-eb3435e22321)
 
 ---
 
