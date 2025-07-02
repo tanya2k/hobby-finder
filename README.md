@@ -1,12 +1,19 @@
-# React + Vite
+# 🌟 Lore Ideas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Lore Ideas** is a simple, spontaneous prompt generator built with React + Vite. It gives you small, chaotic, low-effort challenges to add some spice to your day — great for fun, creativity, or just making new memories.
 
-Currently, two official plugins are available:
+## ✨ Features
+- One-click random idea generator
+- Curated JSON-based prompt list
+- Fully responsive and deployed on GitHub Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
+[https://tanya2k.github.io/lore-ideas](https://tanya2k.github.io/lore-ideas)
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
+- React
+- Vite
+- HTML + CSS
+- GitHub Pages for deployment
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
