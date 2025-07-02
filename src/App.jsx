@@ -16,7 +16,15 @@ function App() {
     <div className="app">
       <h1>Lore Ideas</h1>
       <button onClick={generateIdea}>Generate</button>
-      <p>{idea}</p>
+      {idea && (
+    <div className="idea-card">
+      <h2>{idea.text}</h2>
+      <p>Category: {idea.category}</p>
+      <p>Energy: {idea.energy}</p>
+      <p>Chaos: {idea.chaos}</p>
+    </div>
+  )}
+
     </div>
     <footer>Lore Ideas by Tanya Santhosh</footer>
   </>
