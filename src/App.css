@@ -71,14 +71,13 @@ html, body {
 .idea-card h2 {
   font-size: 1.3rem;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.4;
   color: #ffffff;
 }
 
 
 .tags {
-  margin-top: auto; /* push tags to bottom naturally */
-  padding-top: 1rem;
+  margin-top: 1rem; 
   display: flex;
   justify-content: center;
   gap: 0.5rem;
