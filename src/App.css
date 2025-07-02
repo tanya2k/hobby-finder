@@ -68,12 +68,34 @@ html, body {
 }
 
 .idea-card {
-  background-color: #fff;
+  background-color: #1a1a1a; /* dark card to match background */
+  color: #e0e0e0;
   padding: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  width: 500px; /* fixed width */
+  height: 220px; /* fixed height */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1); /* subtle neon glow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  text-align: left;
 }
+
+.idea-card h2 {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.idea-card p {
+  margin: 0.25rem 0;
+  color: #bbbbbb;
+  font-size: 0.95rem;
+}
+
 
 h1 {
   font-size: 2.5rem;
