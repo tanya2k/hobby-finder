@@ -62,25 +62,29 @@ html, body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
   overflow: hidden;
-  text-align: left;
+  text-align: center;
 }
 
 .idea-card h2 {
   font-size: 1.3rem;
-  margin: 0 0 1rem 0;
-  line-height: 1.4;
+  margin: 0;
+  line-height: 1.5;
   color: #ffffff;
 }
 
+
 .tags {
+  margin-top: auto; /* push tags to bottom naturally */
+  padding-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem;
   flex-wrap: wrap;
 }
+
 
 .tag {
   background-color: #00ffff10;
