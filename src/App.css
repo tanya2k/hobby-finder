@@ -1,44 +1,13 @@
+/* App.css */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 html, body {
@@ -46,13 +15,7 @@ html, body {
   color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-}
-
-#root {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -65,10 +28,31 @@ html, body {
   align-items: center;
   padding: 2rem;
   text-align: center;
+  position: relative;
+}
+
+.button-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-button {
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-button:hover {
+  background: #00ffff22;
+  transform: scale(1.05);
 }
 
 .idea-card {
-  background-color: #1a1a1a; /* dark card to match background */
+  background-color: #1a1a1a;
   color: #e0e0e0;
   padding: 1.5rem;
   margin-top: 1.5rem;
@@ -78,9 +62,9 @@ html, body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   overflow: hidden;
   text-align: left;
-  gap: 1rem;  
 }
 
 .idea-card h2 {
@@ -90,10 +74,28 @@ html, body {
   color: #ffffff;
 }
 
-.idea-card p {
-  margin: 0.25rem 0;
-  color: #bbbbbb;
-  font-size: 0.95rem;
+.tags {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  background-color: #222;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #00ffff;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
 }
 
 h1 {
@@ -118,42 +120,70 @@ button:hover {
   transform: scale(1.05);
 }
 
-p {
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-footer {
-  margin-top: auto;
-  padding: 1rem;
-  text-align: center;
-  opacity: 0.6;
-  font-size: 14px;
-}
-
-/* 🌟 NEW TAG STYLES */
-.tags {
+/* FILTER OVERLAY */
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 14, 14, 0.95);
   display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
 }
 
-.tag {
-  background: rgba(0, 255, 255, 0.1);
+.filter-panel {
+  width: 300px;
+  background: #1a1a1a;
+  padding: 2rem;
+  box-shadow: -2px 0 20px rgba(0, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: slide-in 0.3s ease forwards;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.filter-panel h2 {
   color: #00ffff;
-  border: 1px solid #00ffff;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
+  margin-bottom: 1rem;
 }
 
-.tag:hover {
-  background: rgba(0, 255, 255, 0.2);
-  transform: scale(1.05);
+.filter-panel label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #bbb;
+  gap: 0.5rem;
+}
+
+.filter-panel select,
+.filter-panel input[type="range"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.apply-button {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.close-button {
+  background-color: transparent;
+  color: #888;
+  border: 1px solid #444;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
