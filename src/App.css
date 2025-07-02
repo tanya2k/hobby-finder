@@ -88,7 +88,13 @@ html, body {
   border-radius: 6px;
   font-weight: 500;
   color: #00ffff;
+  transition: background 0.2s ease;
 }
+
+.tag:hover {
+  background-color: #00ffff22;
+}
+
 
 footer {
   margin-top: auto;
