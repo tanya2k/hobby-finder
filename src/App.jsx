@@ -52,7 +52,7 @@ function App() {
             <div className="filter-panel">
               <h2>Filter Prompts</h2>
               <label>
-                Category:
+                📁 Category:
                 <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)}>
                   <option value="">Any</option>
                   <option value="silly">Silly</option>
@@ -63,7 +63,7 @@ function App() {
                 </select>
               </label>
               <label>
-                Energy:
+                ⚡ Energy:
                 <select value={selectedEnergy} onChange={e => setSelectedEnergy(e.target.value)}>
                   <option value="">Any</option>
                   <option value="low">Low</option>
@@ -72,7 +72,7 @@ function App() {
                 </select>
               </label>
               <label>
-                Max Chaos: {selectedChaos}
+                🔥 Max Chaos: {selectedChaos}
                 <input type="range" min="1" max="5" value={selectedChaos} onChange={e => setSelectedChaos(parseInt(e.target.value))} />
               </label>
               <button onClick={generateIdea} className="apply-button">Apply Filters</button>
