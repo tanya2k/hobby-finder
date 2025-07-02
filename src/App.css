@@ -76,25 +76,27 @@ html, body {
 
 .tags {
   display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: #aaa;
-  margin-top: 0.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .tag {
-  background-color: #222;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-weight: 500;
+  background-color: #00ffff10;
   color: #00ffff;
-  transition: background 0.2s ease;
+  border: 1px solid #00ffff66;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tag:hover {
   background-color: #00ffff22;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.4);
 }
-
 
 footer {
   margin-top: auto;
