@@ -4,6 +4,7 @@
 
 Whether you're stuck in a rut, bored on a Tuesday, or just want to feel like the main character again — hit **Generate**, and accept your fate.
 
+https://tanya2k.github.io/lore-ideas/
 ---
 
 ## ✨ Features
