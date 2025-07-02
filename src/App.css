@@ -66,15 +66,16 @@ html, body {
   justify-content: flex-start;
   overflow: hidden;
   text-align: center;
+  gap: 1rem;
 }
 
 .idea-card h2 {
   font-size: 1.3rem;
-  margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #ffffff;
+  margin: 0;
+  padding-bottom: 0.75rem; /* Add this */
 }
-
 
 .tags {
   margin-top: 1rem; 
